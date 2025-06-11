@@ -143,8 +143,10 @@ def get_args_parser():
 
 
     # dataset parameters
+    parser.add_argument('--dataset_name', default='coco', type=str,)
     parser.add_argument('--dataset_file', default='coco')
     parser.add_argument('--data_path',default='data/coco',type=str)
+    parser.add_argument('--image_path', default='images', type=str,)
     parser.add_argument('--remove_difficult', action='store_true')
     parser.add_argument('--fix_size', action='store_true', 
                         help="Using for debug only. It will fix the size of input images to the maximum.")
